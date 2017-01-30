@@ -6,27 +6,30 @@ $(document).ready(function(){
 	});
 
 	$('.number_box').click(function(){
-		$(this).toggleClass('number_check');
+		var lng = $('.number_check').length;
+		if(lng < 6){
+			$(this).toggleClass('number_check');
+			console.log(lng);
+		}
+		else if(lng == 6){
+			$(this).removeClass('number_check');
+		}
 	});
 	$('.acc_numbers').click(function(){
-		$('.game_choise').hide()
-		$('.random_numbers').fadeIn(1500);
+		var optionTexts = [];
+		$('.number_check').each(function() { optionTexts.push($(this).text()) });
 
-	/*	if($('.number_box').hasClass('number_check')){
-			var a = $('.number_check');
-				for(var i=0;i<a.length;i++){
-					console.log(a);
-				}
-		}	
-
-	*/
-	var a = $('.number_box');
-	for (var i = 0; i < a.length; i++) {
-        // Check if each class from the element is within the array of classes we want to match
-        	if($('.number_box').hasClass('number_check')){
-			var b = $('this').html();
-		}	
-		console.log(b);
-    }
+		if(optionTexts.length === 6){
+			$('.game_choise').hide()
+			$('.random_numbers').fadeIn(1500);
+			for(var i = 0;i<optionTexts.length;i++){
+				var lista = '<div class = "u_number">' + optionTexts[i] + '</div>';
+				$('.picked_numbers').append(lista);
+				console.log(lista);
+			}
+		}
+		else{
+			console.log('nie wybrales liczb');
+		}
 	});
 });

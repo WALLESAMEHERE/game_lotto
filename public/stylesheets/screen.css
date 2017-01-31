@@ -133,6 +133,14 @@ h1 {
   .game p:nth-child(5) {
     font-family: 'Orbitron', sans-serif !important; }
 
+.random_numbers {
+  text-align: center; }
+  .random_numbers .u_number {
+    background: yellow;
+    font-size: 2em;
+    text-align: center;
+    width: auto; }
+
 footer {
   position: fixed;
   width: 100%;

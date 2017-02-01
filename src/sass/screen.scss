@@ -76,6 +76,10 @@ h1{
   font-family: 'Pacifico', cursive !important;
   font-size: 5em !important;
 }
+h3{
+  font-size: 2.2em !important;
+  font-family: 'Shadows Into Light', cursive !important;
+}
 .logo{
   width:100%;
   height:200px;
@@ -127,7 +131,15 @@ h1{
     button{
       padding: 0 40px ;
     }
+    .info_warning{
+      p{
+      font-family: 'Amatic SC', cursive !important;
+      font-size: 2em;
+      color:#f45942;
+      }
+    }
   }
+
   button{
     font-family: 'Alfa Slab One', cursive !important;
     outline: none;
@@ -171,7 +183,25 @@ footer{
   
   }
 }
-
+.picked_numbers{
+    border-right: 2px solid grey;
+    text-align: center;
+    .u_number{
+      font-family: 'Bungee Shade', cursive !important;
+      font-size: 2.2em;
+      text-align: center;
+      p{
+        color:#f47742;
+        border-radius: 50%;
+      }
+      
+    }
+  }
+  .start_numbers{
+    button{
+      margin-top: 25%;
+    }
+  }
 .row.no-gutter {
   margin-left: 0;
   margin-right: 0;

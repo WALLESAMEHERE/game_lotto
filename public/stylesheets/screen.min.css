@@ -68,6 +68,10 @@ h1 {
   font-family: 'Pacifico', cursive !important;
   font-size: 5em !important; }
 
+h3 {
+  font-size: 2.2em !important;
+  font-family: 'Shadows Into Light', cursive !important; }
+
 .logo {
   width: 100%;
   height: 200px;
@@ -110,6 +114,10 @@ h1 {
     background-color: #3A998D; }
   .game .game_numbers button {
     padding: 0 40px; }
+  .game .game_numbers .info_warning p {
+    font-family: 'Amatic SC', cursive !important;
+    font-size: 2em;
+    color: #f45942; }
   .game button {
     font-family: 'Alfa Slab One', cursive !important;
     outline: none;
@@ -143,6 +151,20 @@ footer {
     font-family: 'Sarpanch', sans-serif !important;
     text-align: center;
     color: white; }
+
+.picked_numbers {
+  border-right: 2px solid grey;
+  text-align: center; }
+  .picked_numbers .u_number {
+    font-family: 'Bungee Shade', cursive !important;
+    font-size: 2.2em;
+    text-align: center; }
+    .picked_numbers .u_number p {
+      color: #f47742;
+      border-radius: 50%; }
+
+.start_numbers button {
+  margin-top: 25%; }
 
 .row.no-gutter {
   margin-left: 0;

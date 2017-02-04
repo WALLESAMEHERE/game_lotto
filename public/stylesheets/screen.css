@@ -171,9 +171,14 @@ footer {
       color: #f47742;
       border-radius: 50%; }
 
-.start_numbers button {
-  margin-top: 25%; }
+.game_random {
+  display: none; }
+  .game_random .start_numbers button {
+    margin-top: 25%; }
 
 .row.no-gutter {
   margin-left: 0;
   margin-right: 0; }
+
+.lotery {
+  display: none; }

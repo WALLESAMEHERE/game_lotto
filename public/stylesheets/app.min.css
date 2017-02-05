@@ -53,3 +53,146 @@
 
 .icon-star2:before {
   content: "\e909"; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%; }
+
+.container {
+  min-height: 100%;
+  position: relative; }
+
+h1 {
+  text-align: center;
+  font-family: 'Pacifico', cursive !important;
+  font-size: 5em !important; }
+
+h3 {
+  font-size: 2.2em !important;
+  font-family: 'Shadows Into Light', cursive !important; }
+
+.logo {
+  width: 100%;
+  height: 200px;
+  background-color: orange; }
+
+.hide {
+  display: block; }
+
+.game_choise {
+  display: none; }
+
+.game {
+  padding: 5%;
+  text-align: center; }
+  .game .big_ico {
+    width: 100%; }
+    .game .big_ico span {
+      position: relative;
+      font-size: 6em;
+      background-color: #fff;
+      z-index: 2;
+      padding: 0 5%; }
+    .game .big_ico:after {
+      content: '';
+      width: 100%;
+      border-bottom: solid 2px grey;
+      position: absolute;
+      left: 0;
+      top: 100px;
+      z-index: 1; }
+  .game .text_info {
+    font-size: 2em; }
+  .game .game_numbers .number_box {
+    border: 2px solid #FFF;
+    border-radius: 5px;
+    background-color: #7BD4C9;
+    padding: 20px;
+    font-size: 1.5em; }
+  .game .game_numbers .number_check {
+    background-color: #3A998D; }
+  .game .game_numbers button {
+    padding: 0 40px; }
+  .game .game_numbers .info_warning p {
+    font-family: 'Amatic SC', cursive !important;
+    font-size: 2em;
+    color: #f45942; }
+  .game button {
+    font-family: 'Alfa Slab One', cursive !important;
+    outline: none;
+    font-size: 3em;
+    color: white;
+    background-color: orange;
+    display: inline-block;
+    border-radius: 3%;
+    border: 2px solid grey;
+    margin-top: 50px; }
+  .game p {
+    padding: 5px; }
+  .game p:nth-child(1) {
+    font-family: 'Bungee Shade', cursive !important; }
+  .game p:nth-child(2) {
+    font-family: 'Gloria Hallelujah', cursive !important; }
+  .game p:nth-child(3) {
+    font-family: 'Amatic SC', cursive !important; }
+  .game p:nth-child(4) {
+    font-family: 'Shadows Into Light', cursive !important; }
+  .game p:nth-child(5) {
+    font-family: 'Orbitron', sans-serif !important; }
+
+.random_numbers {
+  text-align: center; }
+  .random_numbers .u_number {
+    background: yellow;
+    font-size: 2em;
+    text-align: center;
+    width: auto; }
+
+footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: black; }
+  footer p {
+    font-family: 'Sarpanch', sans-serif !important;
+    text-align: center;
+    color: white; }
+
+.picked_numbers {
+  border-right: 2px solid grey;
+  text-align: center; }
+  .picked_numbers .u_number {
+    font-family: 'Bungee Shade', cursive !important;
+    font-size: 2.2em;
+    text-align: center; }
+    .picked_numbers .u_number p {
+      color: #f47742;
+      border-radius: 50%; }
+
+.game_random {
+  display: none; }
+  .game_random .start_numbers button {
+    margin-top: 25%; }
+
+.start_numbers .result_numbers .end_number li {
+  width: 70px;
+  height: 70px;
+  float: left;
+  list-style-type: none;
+  margin: 1%;
+  color: brown;
+  font-family: 'Bungee Shade', cursive !important;
+  font-size: 3em;
+  text-align: center;
+  background-color: pink;
+  border-radius: 20%;
+  box-shadow: 5px 5px 2px 0 grey; }
+
+.row.no-gutter {
+  margin-left: 0;
+  margin-right: 0; }
+
+.lotery {
+  display: none; }

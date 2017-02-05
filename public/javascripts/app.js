@@ -22,7 +22,7 @@ $(document).ready(function(){
 			$('.game_choise').hide()
 			$('.game_random').fadeIn(1500);
 			for(var i = 0;i<optionTexts.length;i++){
-				var lista = '<div class = "u_number"><p>' + optionTexts[i] + '</p></div>';
+				let lista = '<div class = "u_number"><p>' + optionTexts[i] + '</p></div>';
 				$('.picked_numbers').append(lista);
 			}
 			$('.info_warning p').append('');
@@ -33,13 +33,16 @@ $(document).ready(function(){
 	});
 
 	$('.lotery').click(function(){
-		
+	$('.los_number').remove();
 		var choised = [];
 		var pula = 49;
+
 		for(var i = 0;i<6;i++){
-			var random_number = Math.floor(Math.random(pula)*49)+1;
+			var random_number = Math.floor(Math.random()*49)+1;
 			if (choised.indexOf(random_number) === -1) {
   				choised.push(random_number);
+  				let lista = '<li class="los_number ">' + choised[i] + '</li>';
+				$('.end_number').append(lista);
 			}
 			else{
 				i--;

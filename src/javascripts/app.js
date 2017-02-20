@@ -1,4 +1,6 @@
 $(document).ready(function(){
+var optionTexts = []; // picked numbers
+var choised = []; // random numbers
 	$('.start_game').click(function(){
 		$('.game_info').hide()
 		$('.game_choise').fadeIn(1500);
@@ -11,11 +13,9 @@ $(document).ready(function(){
 		else if(lng == 6){
 			$(this).removeClass('number_check');
 		}
-
-
 	});
 	$('.acc_numbers').click(function(){
-		var optionTexts = [];
+
 		$('.number_check').each(function() { optionTexts.push($(this).text()) });
 
 		if(optionTexts.length === 6){
@@ -33,10 +33,9 @@ $(document).ready(function(){
 	});
 
 	$('.lotery').click(function(){
-	$('.los_number').remove();
-		var choised = [];
+		$('.los_number').remove();
 		var pula = 49;
-
+		choised = [];
 		for(var i = 0;i<6;i++){
 			var random_number = Math.floor(Math.random()*49)+1;
 			if (choised.indexOf(random_number) === -1) {
@@ -46,9 +45,26 @@ $(document).ready(function(){
 			}
 			else{
 				i--;
-				console.log('byla');
 			}
 		}
-		console.log(choised);
+		var suma = 0;
+		for(var i = 0;i<choised.length;i++){
+			for(var j = 0;j<choised.length;j++){
+				if(choised[i] == optionTexts[j]){
+					suma += 1;
+				}
+			}	
+		}
+		if(suma == 6){
+			console.log('jest mam!!!');
+		}
+		else if(suma == 5){
+			console.log('tylko 5');
+		}
+		else if(suma == 4){
+			console.log('tylko 4');
+		}
 	});
 });
+
+
